@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/basket-redux/static/css/main.2b38a00b.css",
-    "main.js": "/basket-redux/static/js/main.6eb3abbe.js",
+    "main.css": "/basket-redux/static/css/main.05b5efa2.css",
+    "main.js": "/basket-redux/static/js/main.9d2f38f9.js",
     "index.html": "/basket-redux/index.html",
-    "main.2b38a00b.css.map": "/basket-redux/static/css/main.2b38a00b.css.map",
-    "main.6eb3abbe.js.map": "/basket-redux/static/js/main.6eb3abbe.js.map"
+    "main.05b5efa2.css.map": "/basket-redux/static/css/main.05b5efa2.css.map",
+    "main.9d2f38f9.js.map": "/basket-redux/static/js/main.9d2f38f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b38a00b.css",
-    "static/js/main.6eb3abbe.js"
+    "static/css/main.05b5efa2.css",
+    "static/js/main.9d2f38f9.js"
   ]
 }
