@@ -27,7 +27,7 @@ export function Basket() {
     };
 
     return (
-        <>
+        <div className="content-wrapper">
             <div className="basket">
                 {basket.map(b =>
                     (<div className="basket__product"
@@ -72,12 +72,12 @@ export function Basket() {
                                 type: ShopActonType.DELETE_ALL_PRODUCTS,
                             });
                         }}
-                >Удалить все
+                >All delete
                 </button>
                 <Link to="/" className="basket-buttons__jump-button">
-                    <button className="button-back">Вернуться в главное меню</button>
+                    <button className="button-back">Back to main menu</button>
                 </Link>
             </div>
-        </>
+        </div>
     );
 }

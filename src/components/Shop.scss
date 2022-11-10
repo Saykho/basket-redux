@@ -1,56 +1,69 @@
-.shop {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+.content {
   padding: 10px;
 
-  &__product {
+  .shop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
 
-    .product-id {
-      margin-bottom: 8px;
+    &__product {
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      .product-id {
+        margin-bottom: 8px;
+      }
+
+      .product-name {
+        margin-bottom: 8px;
+      }
+
+      .product-price {
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
     }
 
-    .product-name {
+    //&__product:last-child {
+    //  margin-right: 0;
+    //}
+
+    &__add-button {
+      padding: 4px 6px;
+      background: white;
+      border: 1px solid #6D95F8FF;
+      border-radius: 4px;
       margin-bottom: 8px;
+      cursor: pointer;
     }
 
-    .product-price {
-      margin-bottom: 8px;
-      font-weight: bold;
+    &__delete-button {
+      padding: 4px 6px;
+      background: white;
+      border: 1px solid #1FC70EFF;
+      border-radius: 4px;
+      margin-top: 8px;
+      cursor: pointer;
     }
   }
 
-  &__add-button {
-    padding: 4px 6px;
-    background: white;
-    border: 1px solid #6D95F8FF;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    cursor: pointer;
-  }
+  .jump-button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 
-  &__delete-button {
-    padding: 4px 6px;
-    background: white;
-    border: 1px solid #1FC70EFF;
-    border-radius: 4px;
-    margin-top: 8px;
-    cursor: pointer;
-  }
-}
-
-.jump-button {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-
-  &__btn {
-    padding: 14px;
-    background: none;
-    border-radius: 6px;
-    cursor: pointer;
+    &__btn {
+      padding: 14px;
+      background: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
   }
 }

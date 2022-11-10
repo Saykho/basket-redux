@@ -18,7 +18,7 @@ export function Shop() {
     };
 
     return (
-        <>
+        <div className="content">
             <div className="shop">
                 {products.map(p =>
                     (<div className="shop__product"
@@ -34,9 +34,9 @@ export function Shop() {
                                             count: 1
                                         } as BasketItem
                                     });
-                                }}>Добавить в корзину
+                                }}>Add to basket
                         </button>
-                        <div>Количество в корзине: {getProductCount(p)}</div>
+                        <div>Quantity in basket: {getProductCount(p)}</div>
                         <button className="shop__delete-button"
                                 onClick={() => dispatch({
                                     type: ShopActonType.DELETE_PRODUCT,
@@ -45,14 +45,14 @@ export function Shop() {
                                         productId: p.id
                                     } as BasketItem
                                 })}
-                        >Удалить из корзины
+                        >Remove from basket
                         </button>
                     </div>)
                 )}
             </div>
             <Link to="/basket" className="jump-button">
-                <button className="jump-button__btn">Перейти в корзинку</button>
+                <button className="jump-button__btn">Go to basket</button>
             </Link>
-        </>
+        </div>
     );
 }
